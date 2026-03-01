@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreA_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Score A"
+
+        app:layout_constraintEnd_toStartOf="@id/scoreB_label_tv"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreB_label_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Score B"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/scoreA_label_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- SCORES -->
+    <TextView
+        android:id="@+id/scoreA_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40sp"
+
+        app:layout_constraintEnd_toStartOf="@id/scoreB_tv"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreA_label_tv" />
+
+    <TextView
+        android:id="@+id/scoreB_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/scoreA_tv"
+        app:layout_constraintTop_toBottomOf="@id/scoreB_label_tv" />
+
+    <Button
+        android:id="@+id/increment_1_scoreA_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@id/increment_1_scoreB_bt"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreA_tv" />
+
+    <Button
+        android:id="@+id/increment_3_scoreA_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="+3"
+        app:layout_constraintEnd_toStartOf="@id/increment_3_scoreB_bt"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/increment_1_scoreA_bt" />
+
+    <Button
+        android:id="@+id/increment_1_scoreB_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="+1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/increment_1_scoreA_bt"
+        app:layout_constraintTop_toBottomOf="@id/scoreB_tv" />
+
+    <Button
+        android:id="@+id/increment_3_scoreB_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="+3"
+        app:layout_constraintStart_toEndOf="@id/increment_3_scoreA_bt"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/increment_1_scoreB_bt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
