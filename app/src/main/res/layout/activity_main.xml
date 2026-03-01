@@ -98,4 +98,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/increment_1_scoreB_bt" />
 
+    <Button
+        android:id="@+id/reset_scores_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/reset_scores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/increment_3_scoreB_bt" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
