@@ -12,8 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Score A"
-
+        android:text="@string/score_a"
         app:layout_constraintEnd_toStartOf="@id/scoreB_label_tv"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,15 +23,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Score B"
-
+        android:text="@string/score_b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/scoreA_label_tv"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <!-- SCORES -->
     <TextView
         android:id="@+id/scoreA_tv"
         android:layout_width="0dp"
@@ -40,7 +37,6 @@
         android:gravity="center"
         android:text="0"
         android:textSize="40sp"
-
         app:layout_constraintEnd_toStartOf="@id/scoreB_tv"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +49,6 @@
         android:gravity="center"
         android:text="0"
         android:textSize="40sp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/scoreA_tv"
@@ -64,7 +59,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:text="+1"
+        android:text="@string/add_1_point"
         app:layout_constraintEnd_toStartOf="@id/increment_1_scoreB_bt"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +70,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:text="+3"
+        android:text="@string/add_3_points"
         app:layout_constraintEnd_toStartOf="@id/increment_3_scoreB_bt"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +81,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:text="+1"
+        android:text="@string/add_1_point"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/increment_1_scoreA_bt"
@@ -97,7 +92,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:text="+3"
+        android:text="@string/add_3_points"
         app:layout_constraintStart_toEndOf="@id/increment_3_scoreA_bt"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintEnd_toEndOf="parent"

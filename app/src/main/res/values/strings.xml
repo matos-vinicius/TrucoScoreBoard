@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TrucoScoreBoard</string>
+    <string name="score_a">Score A</string>
+    <string name="score_b">Score B</string>
+    <string name="add_1_point">+1</string>
+    <string name="add_3_points">+3</string>
 </resources>
