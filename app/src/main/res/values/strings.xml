@@ -4,4 +4,5 @@
     <string name="score_b">Score B</string>
     <string name="add_1_point">+1</string>
     <string name="add_3_points">+3</string>
+    <string name="reset_scores">Reset Scores</string>
 </resources>
