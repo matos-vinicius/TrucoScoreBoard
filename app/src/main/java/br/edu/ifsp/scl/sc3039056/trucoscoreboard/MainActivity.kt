@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                             "Time A chegou na mão de onze!",
                             Toast.LENGTH_SHORT
                         ).show()
-                        increment3ScoreABt.visibility = View.GONE
+                        increment3ScoreABt.visibility = View.INVISIBLE
                     }
                     if (scoreA == 12) {
                         Toast.makeText(
@@ -120,6 +120,14 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
+            }
+            resetScoresBt.setOnClickListener {
+                scoreA = 0
+                scoreB = 0
+                scoreATv.text = scoreA.toString()
+                scoreBTv.text = scoreB.toString()
+                increment3ScoreABt.visibility = View.VISIBLE
+                increment3ScoreBBt.visibility = View.VISIBLE
             }
         }
     }
