@@ -3,10 +3,7 @@ package br.edu.ifsp.scl.sc3039056.trucoscoreboard
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import br.edu.ifsp.scl.sc3039056.trucoscoreboard.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             increment3ScoreABt.setOnClickListener {
-                if ((scoreA < 12) and ((scoreA + 3) < 12)) {
+                if ((scoreA < 12) && ((scoreA + 3) < 12)) {
                     scoreA += 3
                     scoreATv.text = scoreA.toString()
                     if (scoreA == 11) {
@@ -93,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             increment3ScoreBBt.setOnClickListener {
-                if ((scoreB < 12) and ((scoreB + 3) < 12)) {
+                if ((scoreB < 12) && ((scoreB + 3) < 12)) {
                     scoreB += 3
                     scoreBTv.text = scoreB.toString()
                     if (scoreB == 11) {
